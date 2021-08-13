@@ -18,8 +18,10 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classnames from "classnames";
-import promo1 from "assets/img/theme/promo-1.png";
-import cardImg from "assets/img/theme/img-1-1200x1000.jpg";
+import promo1 from "assets/img/theme/madom.jpg";
+import cardImg from "assets/img/theme/madom.jpg";
+import promo2 from "assets/img/theme/promo2.jpg";
+import promo3 from "assets/img/theme/promo3.jpg";
 import ill2 from "assets/img/ill/ill-2.svg";
 import team1 from "assets/img/theme/team-1-800x800.jpg";
 import team2 from "assets/img/theme/team-2-800x800.jpg";
@@ -64,7 +66,7 @@ class Landing extends React.Component {
         <main ref="main">
           <div className="position-relative">
             {/* shape Hero */}
-            <section className="section section-lg section-shaped pb-250">
+            <section className="section section-lg section-shaped pb-250" style={{backgroundColor:"#171C26"}}>
               <div className="shape shape-style-1 shape-default">
                 <span />
                 <span />
@@ -81,15 +83,15 @@ class Landing extends React.Component {
                   <Row>
                     <Col lg="6">
                       <h1 className="display-3 text-white">
-                        A beautiful Design System{" "}
-                        <span>completed with examples</span>
+                      Here are some of the projects I've worked on it{" "}
+                        <span>Take a look here</span>
                       </h1>
-                      <p className="lead text-white">
+                      {/* <p className="lead text-white">
                         The design system comes with four pre-built pages to
                         help you get started faster. You can change the text and
                         images and you're good to go.
-                      </p>
-                      <div className="btn-wrapper">
+                      </p> */}
+                      {/* <div className="btn-wrapper">
                         <Button
                           className="btn-icon mb-3 mb-sm-0"
                           color="info"
@@ -112,7 +114,7 @@ class Landing extends React.Component {
                             Download React
                           </span>
                         </Button>
-                      </div>
+                      </div> */}
                     </Col>
                   </Row>
                 </div>
@@ -136,7 +138,7 @@ class Landing extends React.Component {
             </section>
             {/* 1st Hero Variation */}
           </div>
-          <section className="section section-lg pt-lg-0 mt--200">
+          {/* <section className="section section-lg pt-lg-0 mt--200">
             <Container>
               <Row className="justify-content-center">
                 <Col lg="12">
@@ -253,7 +255,7 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-          </section>
+          </section> */}
           <section className="section section-lg">
             <Container>
               <Row className="row-grid align-items-center">
@@ -266,29 +268,27 @@ class Landing extends React.Component {
                 </Col>
                 <Col className="order-md-1" md="6">
                   <div className="pr-md-5">
-                    <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
+                    {/* <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
                       <i className="ni ni-settings-gear-65" />
-                    </div>
-                    <h3>Awesome features</h3>
+                    </div> */}
+                    <h3>MADOM moveis</h3>
                     <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
+                    A movie site that allows the user to choose and review your favorite movies, and allows the user to view the movie rating
                     </p>
                     <ul className="list-unstyled mt-5">
                       <li className="py-2">
                         <div className="d-flex align-items-center">
                           <div>
-                            <Badge
+                            {/* <Badge
                               className="badge-circle mr-3"
                               color="success"
                             >
                               <i className="ni ni-settings-gear-65" />
-                            </Badge>
+                            </Badge> */}
                           </div>
                           <div>
                             <h6 className="mb-0">
-                              Carefully crafted components
+                            Built with JavaScript
                             </h6>
                           </div>
                         </div>
@@ -296,31 +296,31 @@ class Landing extends React.Component {
                       <li className="py-2">
                         <div className="d-flex align-items-center">
                           <div>
-                            <Badge
+                            {/* <Badge
                               className="badge-circle mr-3"
                               color="success"
                             >
                               <i className="ni ni-html5" />
-                            </Badge>
+                            </Badge> */}
                           </div>
                           <div>
-                            <h6 className="mb-0">Amazing page examples</h6>
+                            <h6 className="mb-0">semantic HTML</h6>
                           </div>
                         </div>
                       </li>
                       <li className="py-2">
                         <div className="d-flex align-items-center">
                           <div>
-                            <Badge
+                            {/* <Badge
                               className="badge-circle mr-3"
                               color="success"
                             >
                               <i className="ni ni-satisfied" />
-                            </Badge>
+                            </Badge> */}
                           </div>
                           <div>
                             <h6 className="mb-0">
-                              Super friendly support team
+                            pure CSS
                             </h6>
                           </div>
                         </div>
@@ -331,7 +331,157 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
-          <section className="section bg-secondary">
+          <section className="section section-lg">
+            <Container>
+              <Row className="row-grid align-items-center">
+                <Col className="order-md-2" md="6">
+                  <img
+                    alt="..."
+                    className="img-fluid floating"
+                    src={promo2}
+                  />
+                </Col>
+                <Col className="order-md-1" md="6">
+                  <div className="pr-md-5">
+                    {/* <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
+                      <i className="ni ni-settings-gear-65" />
+                    </div> */}
+                    <h3>Salmon Cookies</h3>
+                    <p>
+                    A site that allows you to track your purchases and forecast future sales
+                    </p>
+                    <ul className="list-unstyled mt-5">
+                      <li className="py-2">
+                        <div className="d-flex align-items-center">
+                          <div>
+                            {/* <Badge
+                              className="badge-circle mr-3"
+                              color="success"
+                            >
+                              <i className="ni ni-settings-gear-65" />
+                            </Badge> */}
+                          </div>
+                          <div>
+                            <h6 className="mb-0">
+                            Built with JavaScript
+                            </h6>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="py-2">
+                        <div className="d-flex align-items-center">
+                          <div>
+                            {/* <Badge
+                              className="badge-circle mr-3"
+                              color="success"
+                            >
+                              <i className="ni ni-html5" />
+                            </Badge> */}
+                          </div>
+                          <div>
+                            <h6 className="mb-0">semantic HTML</h6>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="py-2">
+                        <div className="d-flex align-items-center">
+                          <div>
+                            {/* <Badge
+                              className="badge-circle mr-3"
+                              color="success"
+                            >
+                              <i className="ni ni-satisfied" />
+                            </Badge> */}
+                          </div>
+                          <div>
+                            <h6 className="mb-0">
+                            pure CSS
+                            </h6>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </section>
+          <section className="section section-lg">
+            <Container>
+              <Row className="row-grid align-items-center">
+                <Col className="order-md-2" md="6">
+                  <img
+                    alt="..."
+                    className="img-fluid floating"
+                    src={promo3}
+                  />
+                </Col>
+                <Col className="order-md-1" md="6">
+                  <div className="pr-md-5">
+                    {/* <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
+                      <i className="ni ni-settings-gear-65" />
+                    </div> */}
+                    <h3>Buss Mall</h3>
+                    <p>
+                    A strange site that allows you to buy useless products, and gives you some reports on the number of votes for products
+                    </p>
+                    <ul className="list-unstyled mt-5">
+                      <li className="py-2">
+                        <div className="d-flex align-items-center">
+                          <div>
+                            {/* <Badge
+                              className="badge-circle mr-3"
+                              color="success"
+                            >
+                              <i className="ni ni-settings-gear-65" />
+                            </Badge> */}
+                          </div>
+                          <div>
+                            <h6 className="mb-0">
+                            Built with JavaScript
+                            </h6>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="py-2">
+                        <div className="d-flex align-items-center">
+                          <div>
+                            {/* <Badge
+                              className="badge-circle mr-3"
+                              color="success"
+                            >
+                              <i className="ni ni-html5" />
+                            </Badge> */}
+                          </div>
+                          <div>
+                            <h6 className="mb-0">semantic HTML</h6>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="py-2">
+                        <div className="d-flex align-items-center">
+                          <div>
+                            {/* <Badge
+                              className="badge-circle mr-3"
+                              color="success"
+                            >
+                              <i className="ni ni-satisfied" />
+                            </Badge> */}
+                          </div>
+                          <div>
+                            <h6 className="mb-0">
+                            pure CSS
+                            </h6>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </section>
+          {/* <section className="section bg-secondary">
             <Container>
               <Row className="row-grid align-items-center">
                 <Col md="6">
@@ -401,10 +551,10 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-          </section>
+          </section> */}
           <section className="section pb-0 bg-gradient-warning">
             <Container>
-              <Row className="row-grid align-items-center">
+              {/* <Row className="row-grid align-items-center">
                 <Col className="order-lg-2 ml-lg-auto" md="6">
                   <div className="position-relative pl-md-5">
                     <img
@@ -487,7 +637,7 @@ class Landing extends React.Component {
                     </CardBody>
                   </Card>
                 </Col>
-              </Row>
+              </Row> */}
             </Container>
             {/* SVG separator */}
             <div className="separator separator-bottom separator-skew zindex-100">
@@ -506,7 +656,7 @@ class Landing extends React.Component {
               </svg>
             </div>
           </section>
-          <section className="section section-lg">
+          {/* <section className="section section-lg">
             <Container>
               <Row className="justify-content-center text-center mb-lg">
                 <Col lg="8">
@@ -691,8 +841,8 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-          </section>
-          <section className="section section-lg pt-0">
+          </section> */}
+          {/* <section className="section section-lg pt-0">
             <Container>
               <Card className="bg-gradient-warning shadow-lg border-0">
                 <div className="p-5">
@@ -722,8 +872,8 @@ class Landing extends React.Component {
                 </div>
               </Card>
             </Container>
-          </section>
-          <section className="section section-lg bg-gradient-default">
+          </section> */}
+          {/* <section className="section section-lg bg-gradient-default">
             <Container className="pt-lg pb-300">
               <Row className="text-center justify-content-center">
                 <Col lg="10">
@@ -768,9 +918,9 @@ class Landing extends React.Component {
                   </p>
                 </Col>
               </Row>
-            </Container>
+            </Container> */}
             {/* SVG separator */}
-            <div className="separator separator-bottom separator-skew zindex-100">
+            {/* <div className="separator separator-bottom separator-skew zindex-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="none"
@@ -785,8 +935,8 @@ class Landing extends React.Component {
                 />
               </svg>
             </div>
-          </section>
-          <section className="section section-lg pt-lg-0 section-contact-us">
+          </section> */}
+          {/* <section className="section section-lg pt-lg-0 section-contact-us">
             <Container>
               <Row className="justify-content-center mt--300">
                 <Col lg="8">
@@ -860,8 +1010,8 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-          </section>
-          <Download />
+          </section> */}
+          {/* <Download /> */}
         </main>
         <CardsFooter />
       </>
